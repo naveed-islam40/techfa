@@ -93,7 +93,7 @@ const HomePartner = () => {
         <div className="pt-20">
           <div className="relative w-full max-w-[700px] aspect-square mx-auto hidden sm:block">
             <img
-              src="public/svg/dashed.svg"
+              src="/svg/dashed.svg"
               className="w-full absolute  to-0 left-0"
             />
 
