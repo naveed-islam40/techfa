@@ -12,10 +12,10 @@ const HeroSection = () => {
         alt="hero"
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
-      <div className="max-w-7xl mx-auto relative z-10 flex flex-col gap-20 pt-10 px-4 sm:px-10">
+      <div className="max-w-7xl mx-auto relative z-10 flex flex-col gap-10 md:gap-16 md:pt-10 px-4 sm:px-10">
         {/* card 1  */}
         <div>
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-medium text-white w-full sm:w-[70%]">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium text-white w-full sm:w-[70%]">
             Techfa – Supporting Key Industrial Sectors
           </h1>
         </div>

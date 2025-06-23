@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#F5F8F9]">
-      <nav className="max-w-8xl mx-auto h-[110px] flex items-center justify-between px-4 sm:px-10 relative">
+      <nav className="max-w-8xl mx-auto h-[80px] md:h-[110px] flex items-center justify-between px-4 sm:px-14 relative">
         {/* Desktop Menu */}
         <ul className="items-center gap-4 hidden sm:flex">
           {pages.map((page) => {
@@ -41,7 +41,7 @@ const Navbar = () => {
         />
 
         {/* Desktop Button */}
-        <button className="hidden sm:block bg-[#0B363C] text-[#F5F8F9] px-8 py-3 cursor-pointer">
+        <button className="hidden sm:block bg-[#0B363C] text-[#F5F8F9] px-10 py-3 cursor-pointer">
           Get started
         </button>
 

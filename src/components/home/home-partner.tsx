@@ -78,19 +78,19 @@ const HomePartner = () => {
 
   return (
     <div className="bg-[#F5F8F9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-10 py-10 flex flex-col pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-10 py-10 flex flex-col pt-5 md:pt-10">
         {/* top  */}
-        <div className="flex justify-center items-center space-y-6 flex-col ">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-medium sm:w-[70%] text-center">
+        <div className="flex justify-center items-center flex-col ">
+          <h1 className="text-2xl md:text-5xl font-medium lg:w-[70%] text-center">
             Techfa is Your Trusted Partner in Industrial Growth.
           </h1>
-          <p className="text-[#0B0F13] font-normal text-lg sm:w-[60%] text-center">
+          <p className="text-[#0B0F13] font-normal text-base md:text-xl lg:w-[60%] text-center mt-3 md:mt-5">
             +20 Years of experience in providing raw materials, industrial
             machinery and increasing productivity in manufacturing industries
           </p>
         </div>
         {/* circles  */}
-        <div className="pt-20">
+        <div className="pt-10 md:pt-20">
           <div className="relative w-full max-w-[700px] aspect-square mx-auto hidden sm:block">
             <img
               src="/svg/dashed.svg"
@@ -124,7 +124,7 @@ const HomePartner = () => {
               </div>
             ))}
           </div>
-          <div className="block sm:hidden mt-10 space-y-6">
+          <div className="block sm:hidden md:mt-10 space-y-6">
             {circles.map((circle, i) => (
               <CircleCard
                 key={i}

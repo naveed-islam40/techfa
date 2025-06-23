@@ -25,13 +25,13 @@ const servicesData = [
 export default function AboutHelp() {
   return (
     <section className="bg-gray-50">
-      <div className="max-w-8xl mx-auto px-4 sm:px-20 pt-20 py-10">
+      <div className="max-w-8xl mx-auto px-4 md:px-16 lg:pt-20 py-10">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 lg:mb-6">
             How we help our customers
           </h2>
-          <p className="text-gray-600 text-sm sm:text-lg max-w-4xl mx-auto leading-relaxed">
+          <p className="text-gray-600 text-sm sm:text-lg max-w-4xl mx-auto ">
             We operate in the UK through two divisions managing solutions that
             best meet the needs of small and medium size businesses and
             Enterprise clients. In North America, our team's goal is to help
@@ -41,7 +41,7 @@ export default function AboutHelp() {
         </div>
 
         {/* Services Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8">
           {servicesData.map((service) => {
             return (
               <div

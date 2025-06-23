@@ -4,11 +4,11 @@ const AboutCustomerTrust = () => {
       <img
         src="/img/customer-ai.png"
         alt=""
-        className="h-[700px] w-full object-cover object-top"
+        className="md:h-[700px] w-full object-cover object-top"
       />
 
-      <div className="absolute top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
-        <div className="bg-[#D9D9D9] opacity-80 max-w-3xl mx-auto p-8 rounded-lg shadow-lg">
+      <div className="absolute top-[50%] md:top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
+        <div className="bg-[#D9D9D9] opacity-80 px-5 md:px-0 md:max-w-3xl mx-auto p-8 rounded-lg shadow-lg">
           <h1 className="text-xl sm:text-3xl font-bold mb-4 text-center    ">
             Customer Trust
           </h1>
