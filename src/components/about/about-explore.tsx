@@ -2,7 +2,7 @@ const AboutExpolre = () => {
   return (
     <div className="bg-[#F5F8F9]">
       <div className="max-w-8xl mx-auto px-4 md:px-16">
-        <div className="flex justify-center">
+        <div className="flex justify-center xl:mb-20">
           <button className="bg-[#0B363C] text-[#F5F8F9] px-10 py-3 cursor-pointer">
             Explore Now
           </button>

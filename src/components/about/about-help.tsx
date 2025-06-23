@@ -24,8 +24,8 @@ const servicesData = [
 
 export default function AboutHelp() {
   return (
-    <section className="bg-gray-50">
-      <div className="max-w-8xl mx-auto px-4 md:px-16 lg:pt-20 py-10">
+    <section className="bg-[#F5F8F9]">
+      <div className="max-w-8xl mx-auto px-4 md:px-16 lg:py-20 py-10">
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 lg:mb-6">

@@ -1,8 +1,8 @@
 const AboutVision = () => {
   return (
-    <div className="bg-[#F5F8F9]">
+    <div className="bg-[#F5F8F9] pt-10">
       <div className="max-w-8xl mx-auto px-4 md:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 lg:py-10 mx-autos ">
+        <div className="grid grid-cols-1 lg:grid-cols-12 lg:py-10 mx-auto gap-5 lg:gap-14 xl:gap-20">
           {/* left  */}
           <div className="col-span-7 relative hidden lg:block">
 
@@ -14,10 +14,10 @@ const AboutVision = () => {
           </div>
           {/* right  */}
           <div className="col-span-5 space-y-4 md:pt-10">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
+            <h1 className="text-2xl sm:text-3xl md:text-[44px] font-bold">
               Our Vision and Mission
             </h1>
-            <p className="w-full  text-sm md:text-base xl:text-lg pb-10 text-[#2C2E31]">
+            <p className="w-full text-sm md:text-base xl:text-lg pb-10 text-[#2C2E31]">
 
               We help create better workplaces. Keeping people safe, reducing
               risks and simplifying processes through our expert teams and our
