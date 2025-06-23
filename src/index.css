@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme inline {
+      --spacing-8xl: 96rem;
+      --shadow-x-27-22 : 0px 27px 22px 0px #00000012;
+
+}
