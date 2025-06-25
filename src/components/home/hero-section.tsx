@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const HeroSection = () => {
   const images = [
     "/img/hero_1.png",
@@ -14,11 +15,16 @@ const HeroSection = () => {
       />
       <div className="max-w-7xl mx-auto relative z-10 flex flex-col gap-10 md:gap-16 md:pt-10 px-4 sm:px-10">
         {/* card 1  */}
-        <div>
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium text-white w-full sm:w-[70%]">
-            Techfa – Supporting Key Industrial Sectors
-          </h1>
-        </div>
+
+        <motion.h1
+          className="text-3xl md:text-5xl lg:text-7xl font-medium text-white w-full sm:w-[70%]"
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, delay: 0.5 }}
+        >
+          Techfa – Supporting Key Industrial Sectors
+        </motion.h1>
+
         {/* card 2  */}
         <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
           <button className="text-[#0B0F13] rounded-2xl p-3 px-8 bg-[#F5F8F9]">
@@ -31,13 +37,19 @@ const HeroSection = () => {
         {/* card 3  */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {images.map((image, index) => (
-            <div key={index} className={`${index % 2 !== 0 ? "pt-14" : ""}`}>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.7, duration: 1.5 }}
+              className={`${index % 2 !== 0 ? "pt-14" : ""}`}
+            >
               <img
                 src={image}
                 alt={`Image ${index}`}
                 className="w-full h-[400px] object-cover rounded-md"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

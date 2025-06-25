@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const AboutCustomerTrust = () => {
   return (
     <div className="relative">
@@ -8,7 +9,12 @@ const AboutCustomerTrust = () => {
       />
 
       <div className="absolute top-[50%] md:top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
-        <div className="bg-[#D9D9D9] opacity-80 px-5 md:px-0 md:max-w-3xl mx-auto p-8 rounded-lg shadow-lg">
+        <motion.div
+          className="bg-[#D9D9D9] opacity-80 px-5 md:max-w-3xl mx-auto p-8 rounded-lg shadow-lg"
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          whileInView={{ opacity: 0.8, y: 0 }}
+        >
           <h1 className="text-xl sm:text-3xl font-bold mb-4 text-center    ">
             Customer Trust
           </h1>
@@ -21,7 +27,7 @@ const AboutCustomerTrust = () => {
             products, but we also help customers make the best choice by
             providing technical and expert advice.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

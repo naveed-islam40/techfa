@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const AboutExpolre = () => {
   return (
     <div className="bg-[#F5F8F9]">
@@ -9,9 +11,13 @@ const AboutExpolre = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-14 xl:gap-20 xl:py-10 pt-10 lg:pt-20">
           {/* left  */}
-          <div className="space-y-4 col-span-5">
+          <motion.div
+            className="space-y-4 col-span-5"
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            whileInView={{ opacity: 1, x: 0 }}
+          >
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
-
               About us
             </h1>
             <p className="w-fulltext-sm md:text-base xl:text-lg md:pb-10 text-[#2C2E31]">
@@ -27,16 +33,20 @@ const AboutExpolre = () => {
               sizes anticipate, manage and avoid risks that endanger their
               people
             </p>
-          </div>
+          </motion.div>
           {/* right  */}
-          <div className="relative col-span-7">
-
+          <motion.div
+            className="relative col-span-7"
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            whileInView={{ opacity: 1, x: 0 }}
+          >
             <img
               src="/img/explore_about.png"
               alt=""
               className="h-full relative z-10  object-contain"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

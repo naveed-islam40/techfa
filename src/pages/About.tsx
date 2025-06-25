@@ -7,7 +7,7 @@ import AboutVision from "../components/about/about-vision";
 
 const About = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <AboutHero />
       <AboutTechfaHelping />
       <AboutExpolre />
