@@ -107,8 +107,7 @@ const HomePartner = () => {
           <div className="relative w-full max-w-[700px] aspect-square mx-auto hidden sm:block">
             <img
               src="/svg/dashed.svg"
-              className="w-full absolute  to-0 left-0 "
-              // animate-spin-slow 
+              className="w-full absolute  to-0 left-0 animate-spin-slow "
             />
 
             {circles.map((circle, i) => (
